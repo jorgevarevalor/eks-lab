@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: eks-lab-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: eks-lab-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
