@@ -28,7 +28,7 @@ def init_db():
 
 @app.route("/health")
 def health():
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "ok", "version": "v2"})
 
 @app.route("/items", methods=["GET"])
 def get_items():

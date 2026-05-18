@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: eks-lab-app
-          image: ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/eks-lab:latest
+          image: 424049490690.dkr.ecr.us-east-1.amazonaws.com/eks-lab:latest
           ports:
             - containerPort: 5000
           env:
